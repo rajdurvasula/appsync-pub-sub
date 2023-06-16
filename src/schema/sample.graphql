@@ -1,0 +1,22 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Channel {
+  data: String!
+  name: String!
+}
+
+type Mutation {
+  sendMessage(data: String!, name: String!): Channel
+}
+
+type Query {
+  getChannel: Channel
+}
+
+type Subscription {
+  onSendMessage(name: String!): Channel @aws_subscribe(mutations : ["sendMessage"])
+}
