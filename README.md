@@ -16,6 +16,36 @@ Following resources are created:
   - Functions, Resolvers in VTL
   - NONE Datasource
 
+## Prerequisites
+
+- Setup AWS Credentials profile
+
+- Install npm dependencies in `Project ROOT folder`
+```
+npm install
+```
+
+- Bootstrap CDK
+```
+cdk bootstrap aws://ACCOUNT_ID/REGION
+```
+
+## Deployment
+- Synthesize CDK Project
+```
+cdk synth
+```
+- Deploy Project
+```
+cdk deploy --require-approval=never
+```
+
+## Cleanup
+- Delete deployed Stack
+```
+cdk destroy
+```
+
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## Useful commands
