@@ -6,7 +6,7 @@ This projects demonstrates AWS AppSync GraphQL Subscription feature.
 
 This is the `backend` setup.
 
-Refer to `frontend` ReactJS project: [simplews-app]()
+Refer to `frontend` ReactJS project: [simplews-app](https://github.com/rajdurvasula/simplews-app.git)
 
 ## Resources
 Following resources are created:
